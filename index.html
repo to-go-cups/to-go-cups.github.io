@@ -4,7 +4,7 @@
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="ko">
 	<head>
-		<title>git - 간편 안내서 - 어렵지 않아요!</title>
+		<title>to-go-cups - 컵앗이 - 공유컵 프로젝트</title>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
 		<link href="//fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet" type="text/css" />
@@ -68,7 +68,7 @@
 	</head>
 	<body>
 		<div class="scrollblock block-title">
-			<h1>git - 간편 안내서</h1>
+			<h1>컵앗이 - 공유컵 프로젝트</h1>
 			<p>git을 시작하기 위한 간편 안내서. 어렵지 않아요 ;)</p>
 			<a class="twitter-share-button" data-hashtags="git" data-lang="ko" data-related="rogerdudler" data-size="large" data-url="http://rogerdudler.github.io/git-guide/index.ko.html" data-via="rogerdudler" href="https://twitter.com/share">트윗</a>
 			<script type="text/javascript">
@@ -85,193 +85,73 @@
 			//]]>
 			</script>
 			<p class="meta">
-				<a href="https://twitter.com/rogerdudler">Roger Dudler</a>가 만들었어요.<br />
+				<a href="https://rogerdudler.github.io/git-guide/index.ko.html">git - 간편 안내서</a>형식을 빌렸습니다.<br />
 				(<a href="https://twitter.com/tfnico">@tfnico</a>, <a href="https://twitter.com/fhd">@fhd</a>와 <a href="http://www.namics.com">Namics</a>의 도움을 받았지요.)<br />
-				번역은 <a href="https://twitter.com/rkjun">Juntai Park</a>과 <a href="http://ardiefox.me">Ardie Hwang</a>이 담당했습니다.<br />
-				문제 보고는 <a href="https://github.com/rogerdudler/git-guide/issues">여기(github)</a>로 해주세요!<br />
-				<br />
-				다른 언어판도 읽어보세요!<br />
-				<a href="index.html">English</a>,
-				<a href="index.de.html">Deutsch</a>,
-				<a href="index.es.html">Español</a>,
-				<a href="index.fr.html">Français</a>,
-				<a href="index.id.html">indonesian</a>,
-				<a href="index.it.html">Italiano</a>,
-				<a href="index.ja.html">日本語</a>,<br />
-				<a href="index.my.html">မြန်မာ</a>,
-				<a href="index.nl.html">Nederlands</a>,
-				<a href="index.pl.html">polski</a>,
-				<a href="index.pt_BR.html">Português</a>,
-				<a href="index.ru.html">Русский</a>,
-				<a href="index.tr.html">Türkçe</a>,
+				카드 뉴스는  <a href="https://github.com/rogerdudler/git-guide/issues">여기(github)</a>에 있어요!<br />
+				설문지는 <a href="">여기(google)</a>에서 하실 수 있어요:)<br />
 				<a href="index.zh.html">中文</a><br />
 			</p>
 			<img src="img/arrow.png" alt="자, 갑시다!" />
 		</div>
 		<a name="setup"></a>
 		<div class="scrollblock block-setup">
-			<h2>설치</h2>
-		        <p><a href="http://git-scm.com/download/mac">OS X용 git 다운로드</a></p>
-		        <p><a href="http://msysgit.github.io/">Windows용 git 다운로드</a></p>
-			<p><a href="http://book.git-scm.com/2_installing_git.html">Linux용 git 다운로드</a></p>
+			<h2>소개</h2>
+			<p>
+				안녕하세요. 경희대학교 시민교육에서 공유 컵 프로젝트를 진행하고 있는 1조입니다.
+			</p>	
 		</div>
 		<a name="create"></a>
 		<div class="scrollblock block-create">
-			<h2>새로운 저장소 만들기</h2>
+			<h2>실제 프로젝트는 아니에요.</h2>
 			<p>
-				폴더를 하나 만들고, 그 안에서 아래 명령을 실행하세요.<br />
-				<code>git init</code><br />
-				새로운 git 저장소가 만들어집니다.
+				일회용 컵의 가장 큰 난점은 재활용이 되지 않는다는 것입니다. <br />
+				결국, 근본적인 해결책은 일회용 컵 자체의 사용량을 줄이는 것인데요, <br />
+				텀블러 사용은 소비자들의 편의에 좋지 않아 잘 시행되지 않고 있습니다. <br />
+				저희는 따릉이, 전동 킥보드처럼 공유경제가 유행하는 상황에 맞추어 공유 컵 시스템을 고안해 보았습니다.
 			</p>
 		</div>
 		<a name="checkout"></a>
 		<div class="scrollblock block-checkout">
-			<h2>저장소 받아오기</h2>
+			<h2>컵앗이는 어떻게 이루어지나요?</h2>
 			<p>
-				로컬 저장소를 복제(clone)하려면 아래 명령을 실행하세요.<br />
-				<code>git clone /로컬/저장소/경로</code><br />
-				원격 서버의 저장소를 복제하려면 아래 명령을 실행하세요.<br />
-				<code>git clone 사용자명@호스트:/원격/저장소/경로</code>
+				<li>공유컵 시스템을 시행할 카페들을 모집합니다. ( 로고가 있어요.) </li>
+				<li>카페마다 넉넉한 개수의 공유 컵을 비치합니다.</li>
+				<li>소비자는 주문 시 일회용 컵과 공유 컵 중 선택할 수 있어요. ( 공유컵 선택 시 할인이 되요.) </li>
+				<li>소비자는 공유 컵을 참여 카페들로 컵을 가져다 줍니다.</li>
 			</p>
 		</div>
 		<a name="trees"></a>
 		<div class="scrollblock block-trees">
-			<h2>작업의 흐름</h2>
+			<h2>카페에게 어떤 도움이 되나요?</h2>
 			<p>
-				여러분의 로컬 저장소는 git이 관리하는 세 그루의 나무로 구성돼있어요.<br />
-				첫번째 나무인 <code>작업 디렉토리(Working directory)</code>는<br />
-				실제 파일들로 이루어져있고, 두번째 나무인 <code>인덱스(Index)</code>는<br />
-				준비 영역(staging area)의 역할을 하며, 마지막 나무인 <code>HEAD</code>는<br />
-				최종 확정본(commit)을 나타내요.
+				플라스틱 투명 컵(약 98.4원)과 뚜껑(23.2원), 빨대(약 4.4원), 홀더(약 23.8원)를 합치면 약 149.8원이 나옵니다. <br />
+				공유 컵 프로젝트를 수락한다면 1개당 150원 상당하는 비용을 줄일 수 있습니다. <br />
+				소비자에게 그 중 100원을 할인하여 줍니다. <br />
+				또한 환경 보호와 선한 영향력을 통해 좋은 홍보가 될 수 있어요. 
+			</p>	
 			</p>
 			<img src="img/trees.png" alt="로컬 저장소는 이렇게 생겼어요." />
 		</div>
 		<a name="add"></a>
 		<div class="scrollblock block-add">
-			<h2>추가와 확정(commit)</h2>
+			<h2>어떤 문제가 있을까요?</h2>
 			<p>
-				변경된 파일은 아래 명령어로 (<b>인덱스</b>에) 추가할 수 있어요.<br />
-				<code>git add &lt;파일 이름&gt;</code><br />
-				<code>git add *</code><br />
-				이것이 바로 git의 기본 작업 흐름에서 첫 단계에 해당돼요.<br />
-				하지만 실제로 변경 내용을 확정하려면 아래 명령을 내려야 한답니다.<br />
-				<code>git commit -m "이번 확정본에 대한 설명"</code><br />
-				자, 이제 변경된 파일이 <b>HEAD</b>에 반영됐어요.<br />
-				하지만, 원격 저장소에는 아직 반영이 안 됐답니다.
+				<li>공유 컵 비용은 구청 수준에서 지원할 수 있도록 하겠습니다.</li>
+				<li>공유 컵 관리는 참여 카페에서 맡아주신 만큼 깨끗하게 관리해주셔야 해요.</li>
+				<li>공유 컵이 수거되지 않는 것을 방지하기 위해 컵에 컵앗이 로고를 넣을게요.</li>
+				<li>공유 컵 훼손 등의 사건들은 관리자와 함께 해결하도록 해요.</li>
 			</p>
 		</div>
 		<a name="push"></a>
 		<div class="scrollblock block-remote">
-			<h2>변경 내용 발행(push)하기</h2>
+			<h2>참여해주세요!</h2>
 			<p>
-				현재의 변경 내용은 아직 로컬 저장소의 <b>HEAD</b> 안에 머물고 있어요.<br />
-				이제 이 변경 내용을 원격 서버로 올려봅시다. 아래 명령을 실행하세요.<br />
-				<code>git push origin master</code><br />
-				(다른 가지를 발행하려면 <i>master</i>를 원하는 가지 이름으로 바꿔주세요.)
-				<br /><br />
-				만약 기존에 있던 원격 저장소를 복제한 것이 아니라면,<br />
-				원격 서버의 주소를 git에게 알려줘야 해요.<br />
-				<code>git remote add origin &lt;원격 서버 주소&gt;</code><br />
-				이제 변경 내용을 원격 서버로 발행할 수 있어요.
-			</p>
-		</div>
-		<a name="branching"></a>
-		<div class="scrollblock block-branching">
-			<h2>가지(branch)치기</h2>
-			<p>
-				가지는 안전하게 격리된 상태에서 무언가를 만들 때 사용해요.<br />
-				여러분이 저장소를 새로 만들면 기본으로 <i>master 가지</i>가 만들어집니다.<br />
-				이제 다른 가지를 이용해서 개발을 진행하고, 나중에 개발이 완료되면<br />
-				master 가지로 돌아와 병합하면 돼요.
-				</p>
-				<img src="img/branches.png" alt="가지치기 예제를 보여드리죠." />
-				<p>
-				아래 명령으로 "feature_x"라는 이름의 가지를 만들고 갈아탑니다.<br />
-				<code>git checkout -b feature_x</code><br />
-				아래 명령으로 master 가지로 돌아올 수 있어요.<br />
-				<code>git checkout master</code><br />
-				아래 명령으로는 가지를 삭제할 수 있어요.<br />
-				<code>git branch -d feature_x</code><br />
-				여러분이 새로 만든 가지를 원격 저장소로 전송하기 전까지는<br />
-				<i>다른 사람들이 접근할 수 없어요</i>.<br />
-				<code>git push origin &lt;가지 이름&gt;</code>
-			</p>
-		</div>
-		<a name="update"></a>
-		<div class="scrollblock block-merging">
-			<h2>갱신과 병합(merge)</h2>
-			<p>
-				여러분의 로컬 저장소를 원격 저장소에 맞춰 갱신하려면<br />
-				아래 명령을 실행하세요.<br />
-				<code>git pull</code><br />
-				이렇게 하면 원격 저장소의 변경 내용이 로컬 작업 디렉토리에<br />
-				<i>받아지고(fetch)</i>, <i>병합(merge)</i>된답니다.<br />
-				다른 가지에 있는 변경 내용을 현재 가지(예를 들면, master 가지)에<br />
-				병합하려면 아래 명령을 실행하세요.<br />
-				<code>git merge &lt;가지 이름&gt;</code><br />
-				첫번째 명령이든 두번째 명령이든, git은<br />
-				자동으로 변경 내용을 병합하려고 시도해요.<br />
-				문제는, 항상 성공하는 게 아니라 가끔<br />
-				<i>충돌(conflicts)</i>이 일어나기도 한다는 거예요.<br />
-				이렇게 충돌이 발생하면, git이 알려주는 파일의 충돌 부분을<br />
-				여러분이 직접 수정해서 병합이 가능하도록 해야 하죠.<br />
-				충돌을 해결했다면, 아래 명령으로 git에게<br />
-				아까의 파일을 병합하라고 알려주세요.<br />
-				<code>git add &lt;파일 이름&gt;</code><br />
-				변경 내용을 병합하기 전에, 어떻게 바뀌었는지 비교해볼 수도 있어요.<br />
-				<code>git diff &lt;원래 가지&gt; &lt;비교 대상 가지&gt;</code>
-			</p>
-		</div>
-		<a name="tagging"></a>
-		<div class="scrollblock block-tagging">
-			<h2>꼬리표(tag) 달기</h2>
-			<p>
-				소프트웨어의 새 버전을 발표할 때마다 꼬리표를 달아놓으면 좋아요.<br />
-				(물론 꼬리표는 SVN 등에 이미 존재하는 기능이지요.)<br />
-				아래 명령을 실행하면 새로운 꼬리표인 <i>1.0.0</i>을 달 수 있어요.<br />
-				<code>git tag 1.0.0 1b2e1d63ff</code><br />
-				위 명령에서 <i>1b2e1d63ff</i> 부분은 꼬리표가 가리킬 확정본 식별자입니다.<br />
-				아래 명령으로 확정본 식별자를 얻을 수 있어요.<br />
-				<code>git log</code><br />
-				확정본 식별자의 앞부분 일부만 입력해도 꼬리표를 붙일 수 있지만,<br />
-				그 일부분이 반드시 고유하다는 조건이 필요해요.
+				실제 프로젝트는 아니지만 &lt;컵앗이 - 공유 컵 프로젝트&gt;가 시행된다면, <br />
+				참여하실 의향이 있으신가요? 
 			</p>
 		</div>
 		<a name="checkout-replace"></a>
 		<div class="scrollblock block-checkout-replace">
-			<h2>로컬 변경 내용 되돌리기</h2>
-			<p>
-				만약 여러분이 (물론 그럴 일은 없겠지만 ;) 실수로 무언가 잘못한 경우,<br />
-				아래 명령으로 로컬의 변경 내용을 되돌릴 수 있어요.<br />
-				<code>git checkout -- &lt;파일 이름&gt;</code><br />
-				위 명령은 로컬의 변경 내용을 변경 전 상태(HEAD)로 되돌려줘요.<br />
-				다만, 이미 인덱스에 추가된 변경 내용과<br />
-				새로 생성한 파일은 그대로 남는답니다.
-				</p>
-				<p>
-				만약, 로컬에 있는 모든 변경 내용과 확정본을 포기하려면,<br />
-				아래 명령으로 원격 저장소의 최신 이력을 가져오고,<br />
-				로컬 master 가지가 저 이력을 가리키도록 할 수 있어요.<br />
-				<code>git fetch origin</code><br />
-				<code>git reset --hard origin/master</code>
-			</p>
-		</div>
-		<a name="hints"></a>
-		<div class="scrollblock block-hints">
-			<h2>유용한 힌트</h2>
-			<p>
-				git의 내장 GUI<br />
-				<code>gitk</code><br />
-				콘솔에서 git output을 컬러로 출력하기<br />
-				<code>git config color.ui true</code><br />
-				이력(log)에서 확정본 1개를 딱 한 줄로만 표시하기<br />
-				<code>git config format.pretty oneline</code><br />
-				파일을 추가할 때 대화식으로 추가하기<br />
-				<code>git add -i</code>
-			</p>
-		</div>
-		<a name="resources"></a>
-		<div class="scrollblock block-resources">
 			<h2>링크 & 자료</h2>
 			<h3>그래픽 클라이언트</h3>
 			<p>
@@ -302,28 +182,5 @@
 				</ul>
 			</p>
 		</div>
-		<a name="comments"></a>
-		<div class="scrollblock block-comments">
-		        <h2>댓글</h2>
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-			//<![CDATA[
-				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-				var disqus_shortname = "git-the-simple-guide"; // required: replace example with your forum shortname
-
-				/* * * DON'T EDIT BELOW THIS LINE * * */
-				(function() {
-					var dsq = document.createElement("script");
-					dsq.async = true;
-					dsq.type = "text/javascript";
-					dsq.src = ("https:" == document.location.protocol ? "https://" : "http://") + disqus_shortname + ".disqus.com/embed.js";
-					(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
-				})();
-			//]]>
-			</script>
-			<noscript><a href="http://disqus.com/?ref_noscript">Disqus</a>에서 제공하는 댓글 기능을 활용하시려면 자바스크립트를 켜 주세요.</noscript>
-		</div>
-		<a href="http://www.git-tower.com/?source=rd" onClick="recordOutboundLink(this, 'Outbound Links', 'git-tower.com'); return false;" class="tower"></a>
-		<a href="files/git_cheat_sheet.pdf" onClick="recordOutboundLink(this, 'Cheat Sheet', 'git-guide'); return false;" class="cheatsheet"></a>
 	</body>
 </html>
